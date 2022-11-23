@@ -66,44 +66,47 @@ h1 {
   }
 }
 
-.next-arrow {
-  width: 50px;
-  height: 50px;
+.next-arrow,
+.prev-arrow {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  transform: translateY(-50%);
+  height: 40px;
   border-radius: 150px;
   background: rgb(214,
       210,
       210, 0.4);
-  position: absolute;
-  top: 50%;
-  right: -70px;
-  transform: translateY(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
 
-  p {
-    color: rgb(201, 23, 95);
-    font-weight: 900;
+  img {
+    width: 35px;
+    height: 35px;
+
   }
+
+}
+
+.next-arrow {
+  right: -17px;
 }
 
 .prev-arrow {
-  width: 50px;
-  height: 50px;
-  border-radius: 150px;
-  background: rgb(214,
-      210,
-      210, 0.4);
-  position: absolute;
-  top: 50%;
-  left: -70px;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  left: -17px;
+}
 
-  p {
-    color: rgb(201, 23, 95);
-    font-weight: 900;
+.slick-dots {
+
+  // background-color: red;
+  li.slick-active {
+    button {
+      &::before {
+        color: rgb(201, 23, 94) !important;
+      }
+    }
+
   }
 }

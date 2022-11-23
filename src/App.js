@@ -8,6 +8,9 @@ import PrevArrow from "./components/PrevArrow";
 import NextArrow from "./components/NextArrow";
 const App = () => {
   const settings = {
+    className: "center",
+    centerMode: true,
+    centerPadding: "60px",
     dots: true,
     infinite: true,
     speed: 900,
@@ -36,6 +39,7 @@ const App = () => {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
+          centerMode: false,
         },
       },
       {
@@ -44,6 +48,7 @@ const App = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
+          centerMode: false,
         },
       },
       {
@@ -51,6 +56,7 @@ const App = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: false,
         },
       },
     ],
